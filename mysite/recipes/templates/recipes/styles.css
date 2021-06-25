@@ -1,0 +1,274 @@
+
+:root {
+  --light-blue: #D6F1FE;
+  --dark-blue: #5995DA;
+  --pink-light: #D6F1FE;
+  --pink-dark: #5995DA;
+  --light-yellow: #d4ffbd;
+  --dark-yellow: #ABD927;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Monaco;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #ABD927;  /* green */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;    /* Add this */
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: var(--dark-blue);
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-family:  Monaco;
+  font-size: 30px;
+  width: 900px;
+  height: 300px;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  flex-direction:  column;
+}
+
+.header input[type=text] {
+  width:  490px;
+  height: 80px;
+  padding: 6px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 8px;
+  font-family:  Monaco;
+  font-size: 20px;
+  align-items:  center;
+}
+
+.questionaire-container{
+  padding-top: 50px;
+  background-color: #D6F1FE;
+  height: 460px;
+}
+
+.options-container{
+  margin-top: 30px;
+  height:  200px;
+  display: flex;
+  alight-items:  center;
+  justify-content:  space-around;
+  align-items: center;
+}
+
+.options {
+  height:  150px;
+  width: 150px;
+  border-radius: 75px;
+  line-height: 140px;
+  background-color: white;
+  text-align: center;
+  border-width: 7px;
+  border-color: #E4E4E4;
+  border-style: solid;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 1250px;
+  display: flex;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  border: 2px solid #fff;
+  margin: 2px;
+  width: 300px;
+  height: 300px;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.sign-up-container input[type=text] {
+  width:  350px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 50px;
+  border: solid;
+  border-color: #E4E4E4;
+  margin-top: 8px;
+  font-family:  Monaco;
+  font-size: 20px;
+  align-items:  center;
+}
+
+/* Join Page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 16px;
+  background: white;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*.btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  background: var(--dark-yellow);
+  color: white;
+  border: 0;
+  font-size: 17px;
+}*/
+.btn {
+  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 9px var(--dark-blue);
+    padding: 5px 15px;
+    background: var(--dark-yellow);
+
+}
+
+.btn:hover {background-color:var(--light-yellow);}
+.btn:active {
+  background-color: var(--light-yellow);
+  box-shadow: 0 5px var(--dark-blue);
+  transform: translateY(4px);
+}
+
+
+
+
+/* Join Page */
+.join-container {
+  max-width: 500px;
+  margin: 150px auto;
+  color: white;
+}
+
+.join-header {
+  text-align: center;
+  padding: 20px;
+  background: var(--pink-light);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.join-main {
+  padding: 30px 40px;
+  background: var(--pink-dark);
+}
+
+.join-main p {
+  margin-bottom: 20px;
+}
+
+.join-main .form-control {
+  margin-bottom: 20px;
+}
+
+.join-main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  margin-top: 0px;
+  width: 35%;
+}
+
+
+
+ .main-bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color:  #D6E9FE;
+  }
+
+  .container {
+    box-sizing: border-box;
+    width: 70%;
+    background-color: pink;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+
