@@ -27,7 +27,7 @@ SECRET_KEY = 'twe2i81plvkf=g-3msbbngos!z=kj)r(qgcngcme+hw^oo5nk1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [get_server_ip()]
+ALLOWED_HOSTS = [get_server_ip(), 'csprojects.asuscomm.com']
 
 
 # Application definition
