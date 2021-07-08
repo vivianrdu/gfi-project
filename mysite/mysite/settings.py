@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from .config import get_configs, get_server_ip
+<<<<<<< HEAD
+=======
+
+>>>>>>> da3703eaa82e8b9bc1972f967c156ebfa7ff1822
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +30,7 @@ SECRET_KEY = 'twe2i81plvkf=g-3msbbngos!z=kj)r(qgcngcme+hw^oo5nk1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [get_server_ip()]
+ALLOWED_HOSTS = [get_server_ip(), 'csprojects.asuscomm.com']
 
 
 # Application definition
