@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'twe2i81plvkf=g-3msbbngos!z=kj)r(qgcngcme+hw^oo5nk1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [get_server_ip()]
+ALLOWED_HOSTS = [get_server_ip(), 'csprojects.asuscomm.com']
 
 
 # Application definition
