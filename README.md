@@ -12,7 +12,7 @@ sudo pip install virtualenv
 ### Activate virtual environment
 
 ``` 
-$ source gfi-project/env/bin/activate
+$ source env/bin/activate
 ```
 
 ### Install module for Django to work with Postgres
