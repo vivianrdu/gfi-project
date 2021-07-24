@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from config import get_configs, get_server_ip
+from .config import get_configs, get_server_ip
+import os
+import urllib.parse as up
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -75,13 +77,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+
+
 configs = get_configs()
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gfi_project',
-        'USER': configs['username'],
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'afdsbcov',
+        'USER': configs['user'],
         'PASSWORD': configs['password'],
         'HOST': configs['host'],
         'PORT': configs['port']
