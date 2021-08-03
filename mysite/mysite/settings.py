@@ -28,7 +28,7 @@ SECRET_KEY = 'twe2i81plvkf=g-3msbbngos!z=kj)r(qgcngcme+hw^oo5nk1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [get_server_ip(), 'csprojects.asuscomm.com']
+ALLOWED_HOSTS = [get_server_ip(), 'csprojects.asuscomm.com', 'http://127.0.0.1:8000', 'localhost']
 
 
 # Application definition
