@@ -3,10 +3,11 @@
 <html lang='en'>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src = "./animation.js"></script>
+    {% load static %}
+    <script src = "{% static 'css/animation.js' %}"></script>
     <meta charset='UTF-8'/>
     <title>Some Web Page</title>
-    <link % static rel='stylesheet' href='static/styles.css' type="text/css" % />
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
   </head>
   <body>
     <div class='menu-container'>
