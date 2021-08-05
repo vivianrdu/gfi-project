@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src = "{% static 'css/animation.js' %}"></script>
     <meta charset='UTF-8'/>
-    <title>Some Web Page</title>
+    <title>Home</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="gfi.png">
     <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
   </head>
   <body>
@@ -14,7 +15,8 @@
       <div class='menu'>
         <div class='links'>
           <a class='signup' href="signup.html">Sign Up</a>      <!-- This is nested now -->
-          <a class='login' href="login.html">Login</a>         <!-- This one too! -->
+          <a class='login' href="login.html">Login</a>
+          <a class='about' href="about.html">About</a>           
         </div>
       </div>
     </div>

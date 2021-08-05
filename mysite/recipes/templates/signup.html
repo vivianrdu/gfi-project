@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <title>Sign up/Log in</title>
-    <link rel='stylesheet' href='styles.css'/>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="gfi.png">
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
   </head>
   <body style = "font-family: 'Noto Sans JP', sans-serif;">
+        <div class='menu-container'>
+          <div class='menu'>
+            <div class='links'>
+              <a class='signup' href="signup.html">Sign Up</a>      <!-- This is nested now -->
+              <a class='login' href="login.html">Login</a>         <!-- This one too! -->
+            </div>
+          </div>
+        </div>
         <div class = "main-bg">
           <div class="join-container">
             <header class="join-header">

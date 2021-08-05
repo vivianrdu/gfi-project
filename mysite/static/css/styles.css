@@ -45,6 +45,10 @@ a:hover{
   justify-content: flex-end;
 }
 
+.about {
+  margin-left: 20px;
+}
+
 .login {
   margin-left: 20px;
 }
