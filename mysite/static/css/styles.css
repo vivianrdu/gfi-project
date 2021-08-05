@@ -45,6 +45,10 @@ a:hover{
   justify-content: flex-end;
 }
 
+.signup {
+  margin-left: 20px;
+}
+
 .about {
   margin-left: 20px;
 }
