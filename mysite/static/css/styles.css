@@ -4,8 +4,8 @@
   --dark-blue: #5995DA;
   --darker-blue: #1358a7;
   --pink-light: #D6F1FE;
-  --light-yellow: #d4ffbd;
-  --dark-yellow: #ABD927;
+  --light-yellow: #54d470;
+  --dark-yellow: #1bb460;
 }
 
 * {
@@ -26,7 +26,7 @@ a:hover{
 
 .menu-container {
   color: #fff;
-  background-color: #ABD927;  /* green */
+  background-color: #1bb460;  /* green */
   padding: 20px 0;
   display: flex;
   justify-content: center;    /* Add this */
@@ -55,6 +55,24 @@ a:hover{
 
 .login {
   margin-left: 20px;
+}
+
+.about-container {
+  color: var(--dark-blue);
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  width: 900px;
+  height: 300px;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  flex-direction:  column;
 }
 
 .header-container {
@@ -103,7 +121,7 @@ a:hover{
 
 .questionaire-container{
   padding-top: 50px;
-  background-color: #D6F1FE;
+  background-color: white;
   height: 460px;
 }
 

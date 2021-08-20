@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'recipes',
     'user',
+    'mysite',
 ]
 
 MIDDLEWARE = [
@@ -135,6 +136,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+STATIC_ROOT = ''
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
