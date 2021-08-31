@@ -73,3 +73,7 @@ def activate(request, uidb64, token):
         return redirect('index.html')
     else:
         return render(request, 'account_activation_invalid.html')	
+
+def account_activation_sent(request):
+    context = None
+    return render(request, 'account_activation_sent.html', context)
