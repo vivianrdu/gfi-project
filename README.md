@@ -22,6 +22,6 @@ pip install psycopg2
 
 ### Run local server
 ``` 
-manage.py runserver
+python manage.py runserver
 ```
 
