@@ -12,10 +12,16 @@ sudo pip install virtualenv
 ### Activate virtual environment
 
 ``` 
-$ source env/bin/activate
+source venv/bin/activate
 ```
 
 ### Install module for Django to work with Postgres
 ```
 pip install psycopg2
 ```
+
+### Run local server
+``` 
+manage.py runserver
+```
+
