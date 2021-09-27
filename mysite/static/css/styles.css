@@ -4,8 +4,8 @@
   --dark-blue: #5995DA;
   --darker-blue: #1358a7;
   --pink-light: #D6F1FE;
-  --light-yellow: #54d470;
-  --dark-yellow: #1bb460;
+  --light-green: #98ffae;
+  --dark-green: #1bb460;
 }
 
 * {
@@ -26,7 +26,7 @@ a:hover{
 
 .menu-container {
   color: #fff;
-  background-color: #1bb460;  /* green */
+  background-color: var(--dark-green);
   padding: 20px 0;
   display: flex;
   justify-content: center;    /* Add this */
