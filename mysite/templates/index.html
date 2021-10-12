@@ -1,6 +1,28 @@
 
 <!DOCTYPE html>
 <html lang='en'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function(){
+    
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  </script>
   <head>
     {% load static %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,11 +47,12 @@
 
     <div class='header-container'>
       <div class='header'>
-        <div> Powered by Plants </div>
-      </div>
+        Powered by Plants<br>
+        <a href="#questionaire" class="arrow">start survey here!</a>
+      </div>  
     </div>
-
-  <div class='questionaire-container'>
+    
+  <div class='questionaire-container' id="questionaire">
     <div id="question"> Do you eat meat? </div>
     <div class='options-container'>
       <!--<div class = 'options'> Yes </div>
