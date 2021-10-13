@@ -17,7 +17,7 @@ var pages = [
         options: ["Costco", "Trader Joe's", "Safeway", "Whole Foods", "Target", "Walmart", "Publix"]
     },
     {
-        question: "What is your price point? (probalby will make this a slider",
+        question: "What is your price point?",
         options: ["$1", "$2", "$3", "$idk"]
     },
     {

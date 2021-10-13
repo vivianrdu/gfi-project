@@ -230,6 +230,12 @@ select{
   margin: 10px;
 }
 
+.photo-grid-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  align-items:  center;
+}
+
 img {
   -webkit-filter: brightness(100%);
   width: 236px;
@@ -331,14 +337,14 @@ a {
 .join-header {
   text-align: center;
   padding: 20px;
-  background: var(--pink-light);
+  background: var(--darker-green);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
 .join-main {
   padding: 30px 40px;
-  background: var(--dark-blue);
+  background: var(--dark-green);
 }
 
 .join-main p {
@@ -379,7 +385,7 @@ a {
     height: 100vh;
     width: 100%;
     position: absolute;
-    background-color:  #D6E9FE;
+    background-color:  var(--light-green);
   }
 
   .container {

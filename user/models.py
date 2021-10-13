@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from user.models import Product
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
@@ -13,3 +14,12 @@ def update_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
     instance.profile.save()
+
+class Product(models.Model):
+    product = models.OneToOneField(Product, on_delete=models.CASCADE)
+    UBC = models.CharField(max_length=50)
+    description = models.CharField(max_length=50)
+    category = models.CharField(max_length=50)
+
+    def get_description(self):
+        return self.description
