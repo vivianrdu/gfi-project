@@ -9,6 +9,9 @@ from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode
 from django.utils.http import urlsafe_base64_decode
 from django.template.loader import render_to_string
+from django.shortcuts import get_object_or_404, render
+
+from user.models import Product
 from .forms import SignUpForm
 from .tokens import account_activation_token
 
@@ -83,3 +86,7 @@ def account_activation_sent(request):
 def account_activation_invalid(request):
     context = None
     return render(request, 'account_activation_invalid.html', context)
+
+def render_items(request, item_id):	
+    item = get_object_or_404(Product, UBC=item_id)
+    return render(request, 'index.html', {'item': item })

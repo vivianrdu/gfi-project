@@ -51,9 +51,13 @@
         <a href="#questionaire" class="arrow">start survey here!</a>
       </div>  
     </div>
-    
-    <div class='recommendation-heading'> Recommendations for you </div>
 
+    {% include 'items.html' %}
+    {% block content %}
+    {% endblock %}
+
+    <div class='recommendation-heading'> Recommendations for you </div>
+    
     <div class='photo-grid-container'>
       <div class='photo-grid'>
         <div class='photo-grid-item first-item'>
