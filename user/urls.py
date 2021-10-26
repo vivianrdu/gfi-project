@@ -13,4 +13,6 @@ urlpatterns = [
     path('account_activation_sent.html', views.account_activation_sent, name='account_activation_sent'),
     path('account_activation_invalid.html', views.account_activation_invalid, name='account_activation_invalid'),
     path('account_activation_email.html', views.signup),
+    path('items/<str:item_name>/',views.render_items, name='item'),
+
 ]

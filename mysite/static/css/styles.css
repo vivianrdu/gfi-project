@@ -113,6 +113,45 @@ a:hover{
   align-items:  center;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .buttons-container {
   display: flex;
   align-items:  center;
@@ -154,7 +193,7 @@ a:hover{
 }
 
 .options {
-  -webkit-filter: brightness(100%);
+  --webkit-filter: brightness(100%);
 }
 
 .options-dark{
@@ -163,7 +202,7 @@ a:hover{
 
 
 .options:hover {
-  -webkit-filter: brightness(90%);
+  --webkit-filter: brightness(90%);
   transition: transform 250ms;
 }
 .options:active {
@@ -189,7 +228,7 @@ select{
 }
 
 .arrow:hover{
-  -webkit-filter: brightness(70%);
+  --webkit-filter: brightness(70%);
 }
 
 .recommendation-heading{
@@ -237,13 +276,13 @@ select{
 }
 
 img {
-  -webkit-filter: brightness(100%);
+  --webkit-filter: brightness(100%);
   width: 236px;
   height: 236px;
 }
 
 img:hover {
-  -webkit-filter: brightness(70%);
+  --webkit-filter: brightness(70%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -379,8 +418,6 @@ a {
   width: 100%;
 }
 
-
-
  .main-bg {
     height: 100vh;
     width: 100%;
@@ -398,7 +435,6 @@ a {
     padding-bottom: 5%;
     text-align: center;
   }
-
   .results {
     margin: auto;
     width: 60%;
