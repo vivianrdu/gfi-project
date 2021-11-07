@@ -1,0 +1,22 @@
+{% block nav %}
+<div class='menu-container'>
+    <div class='menu'>
+      <div class='links'>
+        <a class='home' href="index.html">Home</a> 
+        <a class='about' href="about.html">About</a>   
+        <a class='signup' href="signup.html">Sign Up</a>
+        <a class='login' href="login.html">Login</a>
+      </div>
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+      
+      <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+    </div>    
+  </div>
+{% endblock %}

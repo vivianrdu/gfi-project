@@ -34,30 +34,14 @@
     <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
   </head>
   <body>
-    <div class='menu-container'>
-      <div class='menu'>
-        <div class='links'>
-          <a class='home' href="index.html">Home</a> 
-          <a class='about' href="about.html">About</a>   
-          <a class='signup' href="signup.html">Sign Up</a>
-          <a class='login' href="login.html">Login</a>
-        </div>
-        <input type="text" placeholder="Search..">
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Dashboard</a>
-          <a href="#">Settings</a>
-          <a href="#">Logout</a>
-        </div>
-        
-        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-        
-      </div>    
-    </div>
+    {% include 'navbar.html' %}
+    {% block nav %}
+    {% endblock %}
 
     <div class='header-container'>
       <div class='header'>
         Powered by Plants<br>
+        <input type="text" placeholder="Start searching for products here...">
         <a href="#questionaire" class="arrow">start survey here!</a>
       </div>  
     </div>

@@ -9,24 +9,20 @@
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="gfi.png">
     <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
   </head>
-  <body style = "font-family: 'Noto Sans JP', sans-serif;">
-    <div class='menu-container'>
-      <div class='menu'>
-        <div class='links'>
-          <a class='home' href="index.html">Home</a> 
-          <a class='about' href="about.html">About</a>   
-          <a class='signup' href="signup.html">Sign Up</a>
-          <a class='login' href="login.html">Login</a>
-        </div>
-        <input type="text" placeholder="Search..">
-      </div>
-    </div>
+  <body style='background-color: var(--light-green);'>
+      {% include 'navbar.html' %}
+      {% block nav %}
+      {% endblock %}
 
       <div class='about-container'>
         <div class='about-text'>
-          <div> This project is a joint effort between Good Food Institute and Berkeley graduate and undergraduate students
+            This project is a joint effort between Good Food Institute and Berkeley graduate and undergraduate students
             to make alternative protein products and recipes more accessible. 
-            As of August of 2021, this website is still in its early stages of development! </div>
+            As of August of 2021, this website is still in its early stages of development!
+            <br><br>
+            Contact:<br>
+            Chloe Hsu <a href="mailto:chloehsu@berkeley.edu">✉️chloehsu@berkeley.edu</a><br>
+            Vivian Du <a href="mailto:vivian_du@berkeley.edu">✉️vivian_du@berkeley.edu</a>
       </div>
   </body>
 </html>
