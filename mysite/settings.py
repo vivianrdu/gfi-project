@@ -93,7 +93,10 @@ DATABASES = {
         'USER': configs['user'],
         'PASSWORD': configs['password'],
         'HOST': configs['host'],
-        'PORT': configs['port']
+        'PORT': configs['port'],
+        'TEST': {
+            'NAME': 'mytestdatabase',
+        },
     }
 }
 

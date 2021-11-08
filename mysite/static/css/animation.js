@@ -6,11 +6,11 @@ var pages = [
     },
     {
         question: "Do you have any food allergies?",
-        options: ["Wheat-free", "Dairy-free", "Peanut-free", "Tree nut-free", "Sulfite-free", "Soy-free", "Sesame-free", "Egg-free", "Gluten-free"] 
+        options: ["Dairy", "Peanut", "Tree nuts", "Sulfite", "Soy", "Sesame", "Egg", "Gluten"] 
     },
     {
         question: "Do you follow any of these diets?",
-        options: ["Vegan", "Paleo", "Ketogenic", "Low Fodmap"]
+        options: ["Vegan", "Paleo", "Ketogenic"]
     },
     {
         question: "What stores do you shop from?",
@@ -18,12 +18,12 @@ var pages = [
     },
     {
         question: "What is your price point?",
-        options: ["$1", "$2", "$3", "$idk"]
+        options: ["$10", "$20", "$30"]
     },
     {
         question: "What foods do you like?",
         // get this from a dataset lol
-        options: ["Broccoli", "Apple", "Banana","Bruscetta","bacon", "black beans", "bagels", "baked beans", "BBQ", "bison","barley", "beer", "bisque",
+        options: ["broccoli", "apple", "banana","bruscetta","bacon", "black beans", "bagels", "baked beans", "BBQ", "bison","barley", "beer", "bisque",
                     "bluefish", "bread", "broccoli", "buritto", "babaganoosh"]
     }
 ]

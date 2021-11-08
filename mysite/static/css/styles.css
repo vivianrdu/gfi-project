@@ -113,11 +113,8 @@ a:hover{
   margin-top: 8px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  align-items:  center;
-}
-
-input[type="text"] {
-  border-radius: 5px;
+  align-items: center;
+  text-indent: 20px;
 }
 
 input[type="text"]::placeholder {
